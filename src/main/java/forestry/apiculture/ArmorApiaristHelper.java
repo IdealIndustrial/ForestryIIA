@@ -20,6 +20,8 @@ import forestry.api.apiculture.IArmorApiaristHelper;
 
 public class ArmorApiaristHelper implements IArmorApiaristHelper {
 
+	public static Item ic2helmet = null, ic2chest = null, graviChest = null, ic2legs = null, ic2boots = null;
+
 	@Override
 	public boolean isArmorApiarist(ItemStack stack, EntityLivingBase entity, String cause, boolean doProtect) {
 		if (stack == null) {
@@ -28,6 +30,8 @@ public class ArmorApiaristHelper implements IArmorApiaristHelper {
 
 		Item item = stack.getItem();
 		if (!(item instanceof IArmorApiarist)) {
+			if(item != null)
+				return item == ic2helmet || item == ic2boots || item == ic2chest || item == ic2legs || item == graviChest;
 			return false;
 		}
 
