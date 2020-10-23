@@ -167,6 +167,7 @@ public class PluginIC2 extends ForestryPlugin {
 		ArmorApiaristHelper.ic2legs = IC2Items.getItem("quantumLeggings").getItem();
 		ArmorApiaristHelper.ic2boots = IC2Items.getItem("quantumBoots").getItem();
 		ArmorApiaristHelper.graviChest = GameRegistry.findItem("GraviSuite","graviChestPlate");
+		ArmorApiaristHelper.kpChest = GameRegistry.findItem("GraviSuite","kpChestPlate");
 
 		Circuit.farmRubberManual = new CircuitFarmLogic("manualRubber", FarmLogicRubber.class);
 
