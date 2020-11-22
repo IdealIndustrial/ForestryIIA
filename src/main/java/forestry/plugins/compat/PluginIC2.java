@@ -18,12 +18,10 @@ import java.util.EnumSet;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import forestry.api.farming.Farmables;
-import forestry.apiculture.ArmorApiaristHelper;
 import forestry.farming.logic.FarmableBasicIC2Crop;
 import ic2.api.crops.ICropTile;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import net.minecraft.tileentity.TileEntity;
@@ -161,13 +159,6 @@ public class PluginIC2 extends ForestryPlugin {
 		uuMatter = IC2Items.getItem("matter");
 		silver = IC2Items.getItem("silverIngot");
 		brass = IC2Items.getItem("bronzeIngot");
-
-		ArmorApiaristHelper.ic2helmet = IC2Items.getItem("quantumHelmet").getItem();
-		ArmorApiaristHelper.ic2chest = IC2Items.getItem("quantumBodyarmor").getItem();
-		ArmorApiaristHelper.ic2legs = IC2Items.getItem("quantumLeggings").getItem();
-		ArmorApiaristHelper.ic2boots = IC2Items.getItem("quantumBoots").getItem();
-		ArmorApiaristHelper.graviChest = GameRegistry.findItem("GraviSuite","graviChestPlate");
-		ArmorApiaristHelper.kpChest = GameRegistry.findItem("GraviSuite","kpChestPlate");
 
 		Circuit.farmRubberManual = new CircuitFarmLogic("manualRubber", FarmLogicRubber.class);
 
